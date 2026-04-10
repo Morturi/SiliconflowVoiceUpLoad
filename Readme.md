@@ -3,8 +3,6 @@
 ## 简介
 
 这是一个用于上传参考音频创建自定义音色的工具，适用于硅基流动API。通过简单的界面操作，您可以轻松上传音频文件，创建专属于您的AI语音音色。
-[硅基流动文档](https://docs.siliconflow.cn/cn/userguide/capabilities/text-to-speech#5)
-
 
 ## 功能特点
 
@@ -24,7 +22,7 @@
 
 1. 克隆或下载本仓库
    ```
-   git clone https://github.com/flyhunterl/SiliconflowVoiceUpLoad.git
+   git clone https://github.com/Morturi/SiliconflowVoiceUpLoad.git
    cd SiliconflowVoiceUpLoad
    ```
 
@@ -41,8 +39,8 @@
 ## 使用方法
 
 1. 启动应用后，您将看到一个简洁的界面
-2. 输入您的API Key（从[硅基流动控制台](https://cloud.siliconflow.cn/account/ak)获取）
-3. 上传参考音频文件（支持mp3、wav等格式）
+2. 输入您的API Key（从[硅基流动控制台](https://cloud.siliconflow.com)获取）
+3. 上传参考音频文件（支持mp3格式）
 4. 选择模型名称
 5. 为您的音色取一个名字
 6. 输入音频中说的文字内容（尽量准确匹配音频内容）
@@ -67,7 +65,7 @@ A: 请检查以下几点：
 - 是否已完成实名认证
 
 ### Q: 如何获取API Key？
-A: 登录[硅基流动控制台](https://cloud.siliconflow.cn/account/ak)，在API密钥管理页面获取。
+A: 登录[硅基流动控制台](https://cloud.siliconflow.com)，在API密钥管理页面获取。
 
 ### Q: 支持哪些音频格式？
 A: 支持常见的音频格式，如mp3、wav、ogg等。
@@ -82,18 +80,6 @@ A: 支持常见的音频格式，如mp3、wav、ogg等。
 4. 推送到分支 (`git push origin feature/amazing-feature`)
 5. 开启一个Pull Request
 
-## 打赏
-
-您的打赏能让我在下一顿的泡面里加上一根火腿肠。
-
-![20250314_125818_133_copy](https://github.com/user-attachments/assets/33df0129-c322-4b14-8c41-9dc78618e220)
-
 ## 许可证
 
 本项目采用MIT许可证 - 详见[LICENSE](LICENSE)文件
-
-## 联系方式
-
-- 作者博客：[https://llingfei.com](https://llingfei.com)
-- 问题反馈：请在[GitHub Issues](https://github.com/flyhunterl/SiliconflowVoiceUpLoad/issues)提交
-
