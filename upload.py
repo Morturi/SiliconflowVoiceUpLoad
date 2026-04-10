@@ -46,7 +46,7 @@ def upload_voice(api_key, audio_file, model_name, voice_name, voice_text):
     
     try:
         # 准备API请求
-        url = "https://api.siliconflow.cn/v1/uploads/audio/voice"
+        url = "https://api.siliconflow.com/v1/uploads/audio/voice"
         headers = {
             "Authorization": f"Bearer {api_key.strip()}"  # 去除可能的空格
         }
@@ -278,7 +278,7 @@ def get_voice_list(api_key):
         return "错误：请输入API Key"
     
     try:
-        url = "https://api.siliconflow.cn/v1/audio/voice/list"
+        url = "https://api.siliconflow.com/v1/audio/voice/list"
         headers = {
             "Authorization": f"Bearer {api_key.strip()}"
         }
@@ -319,7 +319,7 @@ def create_gradio_interface():
         return "错误：请输入API Key"
     
     try:
-        url = "https://api.siliconflow.cn/v1/audio/voice/list"
+        url = "https://api.siliconflow.com/v1/audio/voice/list"
         headers = {
             "Authorization": f"Bearer {api_key.strip()}"
         }
@@ -583,18 +583,14 @@ if __name__ == "__main__":
         # 创建 Gradio 界面
         demo = create_gradio_interface()
         
-        # 启动 Gradio 服务器
+# 启动 Gradio 服务器
         logger.info("启动 Gradio 服务器...")
-        # 兼容旧版本Gradio
-        try:
-            demo.queue(concurrency_count=1)  # 新版Gradio
-        except TypeError:
-            demo.queue()  # 旧版Gradio
+        
+        demo.queue() 
             
         demo.launch(
             server_name="127.0.0.1",
             server_port=7860,
-            show_api=False,
             share=False,
             inbrowser=True
         )
